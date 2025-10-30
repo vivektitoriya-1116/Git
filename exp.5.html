@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: 40px 10px 10px 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        label {
+            display: inline-block;
+            width: 90px;
+            vertical-align: top;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 60px;
+        }
+        .gender {
+            width: auto;
+        }
+        .button-row {
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <hr>
+    <div class="container">
+        <form>
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name"><br>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter valid email address"><br>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password"><br>
+
+            <label>Gender:</label>
+            <input class="gender" type="radio" name="gender"> Male
+            <input class="gender" type="radio" name="gender"> Female
+            <input class="gender" type="radio" name="gender"> Other<br>
+            
+            <label>Course:</label>
+            <select>
+                <option>Select Course</option>
+                <!-- Add other course options here -->
+            </select><br>
+            
+            <label>Contact No:</label>
+            <input type="text" placeholder="Enter phone number"><br>
+            
+            <label>Address:</label>
+            <textarea placeholder="Enter your address"></textarea><br>
+
+            <div class="button-row">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <hr>
+        &copy; 2025 Student Registration Portal.
+    </div>
+</body>
+</html>
