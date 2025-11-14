@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple News Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0.3em 0 1em;
+      font-style: italic;
+    }
+
+    nav {
+      background: #0055aa;
+      text-align: center;
+      padding: 0.7em 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+    }
+
+    a.link {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a.link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #003366;
+      color: white;
+      padding: 1em 0;
+      margin-top: 20px;
+    }
+
+    audio {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Global Daily News</h1>
+    <p>Your Trusted Source for Latest Updates</p>
+  </header>
+
+  <nav>
+    <a href="#world">World</a>
+    <a href="#sports">Sports</a>
+    <a href="#entertainment">Entertainment</a>
+    <a href="#podcast">Podcast</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="world">
+      <h2>World News</h2>
+      <p>Today’s top headline: Global leaders meet to discuss climate change initiatives.</p>
+      <p><a class="link" href="https://www.bbc.com/news" target="_blank">Read more on BBC</a></p>
+    </section>
+
+    <section id="sports">
+      <h2>Sports Update</h2>
+      <p>Highlights of yesterday’s football match with thrilling last-minute goals!</p>
+      <p>
+        <a class="link" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank">
+          Watch: Big Buck Bunny 60fps 4K - Official Blender Foundation Short
+        </a>
+      </p>
+    </section>
+
+    <section id="entertainment">
+      <h2>Entertainment Buzz</h2>
+      <p>New movie trailer released today. Fans are excited!</p>
+    </section>
+
+    <section id="podcast">
+      <h2>News Podcast</h2>
+      <p>Listen to today’s top headlines:</p>
+      <audio controls>
+        <source src="podcast.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a class="link" href="mailto:info@globalnews.com">info@globalnews.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Global Daily News</p>
+  </footer>
+
+</body>
+</html>
