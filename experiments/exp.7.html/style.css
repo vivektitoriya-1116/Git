@@ -30,17 +30,10 @@ body{
 }
 .float-menu a{
     display:float;
-    float:right;
+    float:left;
     background:orange;
     color:white;
     padding:10px 15px;
     margin:5px;
     text-decoration:none;
-}
-.clear-example{
-    clear:both;
-    background:#f4f4f4;
-    padding:10px;
-    margin-top:20px;
-    border:1px solid #ccc;
 }
