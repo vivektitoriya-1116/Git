@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navigation Menu Demo</title>
+  <style>
+    :root {
+      --blue: #2196f3;
+      --green: #4caf50;
+      --purple: #7e57c2;
+      --orange: #ff9800;
+      --text: #fff;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: #f6f8fa;
+      color: #111;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      margin: 0 0 24px;
+      font-size: 28px;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin: 4px;
+      display: inline-block; /* Base for consistent padding/rounded corners */
+    }
+
+    /* Block example: each link takes full width and stacks vertically */
+    .nav.block a {
+      display: block;
+      width: 100%;
+      background: var(--blue);
+      margin: 8px 0;
+    }
+
+    /* Inline example: links flow horizontally with minimal spacing */
+    .nav.inline a {
+      display: inline;
+      background: var(--green);
+      margin: 0 8px 0 0; /* right spacing only to avoid line-height gaps */
+      padding: 8px 12px; /* keep a bit of padding even for inline */
+      border-radius: 6px;
+    }
+
+    /* Inline-block example: horizontal items that respect width/height */
+    .nav.inline-block a {
+      display: inline-block;
+      background: var(--purple);
+      margin-right: 8px;
+    }
+
+    /* Float example: horizontally floated items; clear the container */
+    .nav.float {
+      overflow: auto; /* simple clearfix */
+    }
+    .nav.float a {
+      float: left;
+      background: var(--orange);
+      margin-right: 8px;
+    }
+
+    /* Optional: hover states for visual feedback */
+    .nav.block a:hover { background: #1976d2; }
+    .nav.inline a:hover { background: #388e3c; color: #fff; }
+    .nav.inline-block a:hover { background: #5e35b1; }
+    .nav.float a:hover { background: #f57c00; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Navigation Menu Demo</h1>
+
+    <section>
+      <h2>Block example</h2>
+      <nav class="nav block" aria-label="Block navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Inline example</h2>
+      <nav class="nav inline" aria-label="Inline navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Inline-block example</h2>
+      <nav class="nav inline-block" aria-label="Inline-block navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Float example</h2>
+      <nav class="nav float" aria-label="Float navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+  </div>
+</body>
+</html>
