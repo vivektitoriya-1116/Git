@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Basics</title>
+  <style>
+    .flex-container {
+      display: flex;             
+      justify-content: center;    
+      align-items: center;        
+      flex-direction: row;        
+      gap: 10px;                  
+      height: 200px;              
+      border: 2px solid #333;
+      background-color: #f0f8ff;
+    }
+
+    .box {
+      width: 60px;
+      height: 60px;
+      background-color: lightcoral;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+</body>
+</html>
