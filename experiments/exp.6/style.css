@@ -24,7 +24,8 @@ h1 {
 
 /* Product image */
 .product-box img {
-    width: 100%;
+    size: 10px;
+     width: 100%;
     border-radius: 8px;
 }
 
@@ -46,6 +47,9 @@ h1 {
     color: red;
     font-weight: bold;
     font-size: 1.1em;
+}
+.image{
+    size: 50px;
 }
 
 /* Add to Cart button…
